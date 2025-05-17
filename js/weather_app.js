@@ -1,6 +1,6 @@
 window.weatherApp = window.weatherApp || { components: {}, dataStore: {} };
 
-// Image mapping
+// Image obj
 window.weatherImg = {
   sun: "fa-solid fa-sun",
   cloudy: "fa-solid fa-cloud",
@@ -42,10 +42,11 @@ document.addEventListener("DOMContentLoaded", () => {
     card.className = "card has-text-centered is-clickable";
     card.style.cursor = "pointer";
     card.onclick = () => {
-      window.location.href = `city.html?name=${encodeURIComponent(cityName)}`;
+      window.location.href = `/city/?name=${encodeURIComponent(cityName)}`;
+
     };
 
-    // ✅ Get a random image for each card
+    //  Get a random image for each card
     const randomImg = getRandomWeatherImage();
 
     card.innerHTML = `
