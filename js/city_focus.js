@@ -34,21 +34,23 @@ document.addEventListener("DOMContentLoaded", () => {
   const weatherIcon = getRandomWeatherImage(); // your helper function
 
   main.innerHTML = `
-    <div class="card has-text-centered">
+    <div class="columns card has-text-centered">
       <header class="card-header">
         <p class="card-header-title is-size-4">${city}</p>
-      </header>
-      <div class="card-image">
-        <figure class="image is-64x64 mt-3">
+         <figure class="image is-64x64 pt-6">
           <i class="${weatherIcon} fa-3x"></i>
-        </figure>
+        </figure>   
+      </header>
+      <div class="container">
+        <div class="card-image">
+        </div>
       </div>
-      <div class="card-content">
+      <div class="card-content column">
         <div class="content">
-          <p><strong>Max Temperature:</strong> ${maxTemp}°C</p>
-          <p><strong>Min Temperature:</strong> ${minTemp}°C</p>
-          <p><strong>Wind Speed:</strong> ${windSpeed} km/h</p>
-          <p><strong>Humidity:</strong> ${humidity}%</p>
+          <p><strong><i class="fa-solid fa-temperature-high"></i>  Max Temperature:</strong> ${maxTemp}°C</p>
+          <p><strong><i class="fa-solid fa-temperature-low"></i> Min Temperature:</strong> ${minTemp}°C</p>
+          <p><strong><i class="fa-solid fa-wind"></i> Wind Speed:</strong> ${windSpeed} km/h</p>
+          <p><strong><i class="fa-solid fa-droplet"></i> Humidity:</strong> ${humidity}%</p>
         </div>
       </div>
     </div>
@@ -94,11 +96,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     col.innerHTML = `
       <div class="card has-text-centered">
-        <div class="card-content">
+        <div class="card-content ">
           <p class="title is-6">${dayName}</p>
-          <p class="subtitle is-7">${desc}</p>
-          <p>Max: ${cityData.daily.temperature_2m_max[i]}°C</p>
-          <p>Min: ${cityData.daily.temperature_2m_min[i]}°C</p>
+          <p class="subtitle is-7">${desc}</p><i class="fa-solid fa-temperature-three-quarters"></i>
+          <p>+ Max: ${cityData.daily.temperature_2m_max[i]}°C</p>
+          <p> - Min: ${cityData.daily.temperature_2m_min[i]}°C</p>
         </div>
       </div>
     `;
