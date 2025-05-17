@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>☀️ Weather App</title> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">  
+    <script src="https://kit.fontawesome.com/b897380ebc.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <!-- Load data first, then app -->
+  <script src="/data/weather_data.js"></script>
+  <script src="/js/weather_app.js"></script>
+
+
+{% if script %}
+  <script src="{{ script }}"></script>
+{% endif %}
+
+</head>
+
+<body>
+  {% include "nav.njk" %}
+  {% include "header.njk" %}
+    {{ content | safe }}
+  <div class="has-text-centered mb-5 mt-4">
+     
+<main class="section has-background-light">
+  <div class="container">
+    <h1 class="title has-text-centered">Weather Forecast</h1>
+    <div class="columns is-multiline" id="weather-cards"></div>
+  </div>
+</main>
+
+  
+
+ {% include "footer.njk" %}
+
+</body>
+</html>
+
+

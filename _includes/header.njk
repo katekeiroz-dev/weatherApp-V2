@@ -1,0 +1,26 @@
+<section>
+  
+        <div class="columns">
+        <div class="column  has-text-centered">
+            <img src="/images/logo-big.png" alt="" class="mr-6 mt-5 pb-5">
+        </div> 
+        <div class="pt-6  column has-text-centered mt-6">
+         <p class="is-size-5" >Date <i class="fa-solid fa-calendar-days"></i> / Time  <i class="fa-solid fa-clock"></i> </p>
+        <p id="clock" class=" pt-4 is-size-5 has-text-weight-semibold has-text-dark mb-3">
+        </p>
+        </div>
+        <script>
+        function updateClock() {
+        const now = dayjs();
+        const formatted = now.format("dddd, D MMMM YYYY - HH:mm");
+        document.getElementById("clock").textContent = formatted;
+      }
+      document.addEventListener("DOMContentLoaded", () => {
+        updateClock();
+        setInterval(updateClock, 60000); 
+      });
+        </script>
+       
+    </div>
+</div>
+</section>
