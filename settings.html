@@ -1,0 +1,97 @@
+---
+layout: layout.njk
+title: Settings
+script: /js/settings.js
+
+---
+
+  <main class="section has-background-light">
+  <div class="container">
+    <h1 class="title has-text-centered">Settings</h1>
+
+    <div class="columns is-variable is-6">
+      <!-- FAV CITIES -->
+      <div class="column is-half">
+        <div class="card">
+          <header class="card-header">
+            <p class="card-header-title">Display Favorite Cities</p>
+          </header>
+          <div class="card-content">
+            <form id="cities-form">
+              <div class="field">
+                <div class="control">
+                  <!-- CHECKBOX-->
+                  <label class="checkbox"><input type="checkbox" name="favoriteCities" value="Copenhagen"> Copenhagen</label><br>
+                   <label class="checkbox"><input type="checkbox" name="favoriteCities" value="Amsterdam"> Amsterdam</label><br>
+                  <label class="checkbox"><input type="checkbox" name="favoriteCities" value="Berlin"> Berlin</label><br>
+                  <label class="checkbox"><input type="checkbox" name="favoriteCities" value="Tromso"> Tromso</label><br>           
+                  <label class="checkbox"><input type="checkbox" name="favoriteCities" value="Paris"> Paris</label><br>          
+                  <label class="checkbox"><input type="checkbox" name="favoriteCities" value="Waterford"> Waterford</label><br>
+                  <label class="checkbox"><input type="checkbox" name="favoriteCities" value="Cork"> Cork</label><br>
+                   <label class="checkbox"><input type="checkbox" name="favoriteCities" value="NewYork"> New York</label><br>    
+                  <label class="checkbox"><input type="checkbox" name="favoriteCities" value="SanFrancisco"> San Francisco</label>
+                </div>
+              </div>
+              <div class="field mt-4">
+                <div class="control">
+                  <div class="buttons">
+                    <button class="button is-black is-half" onclick="updateFavoriteCities()">Save</button>
+                    <button class="button is-black is-half" onclick="resetFavoriteCities()">Reset</button>
+                    </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!--  OTHERS PREFERENCES -->
+      <div class="column is-half">
+        <div class="card">
+          <header class="card-header">
+            <p class="card-header-title">Other Preferences</p>
+          </header>
+          <div class="card-content">
+            <form id="preferences-form">
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox">
+                    <input type="checkbox" name="displayPreferences" value="celsius">
+                    Show temperatures the European way
+                  </label><br><br>
+
+                  <label class="checkbox">
+                    <input type="checkbox" name="displayPreferences" value="fahrenheit">
+                    Show temperatures the American way
+                  </label><br><br>
+
+                  <label class="checkbox">
+                    <input type="checkbox" name="displayPreferences" value="kmh">
+                    Use metric wind speeds (fast & breezy)
+                  </label><br><br>
+
+                  <label class="checkbox">
+                    <input type="checkbox" name="displayPreferences" value="mph">
+                    Use imperial wind speeds (miles & gusts)
+                  </label><br><br>
+
+                  <label class="checkbox">
+                    <input type="checkbox" name="displayPreferences" value="feelslike">
+                    Current feelslike
+                  </label>
+                </div>
+              </div>
+
+              <div class="field mt-4">
+                <div class="control">
+                  <button class="button is-black is-fullwidth">Save</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>

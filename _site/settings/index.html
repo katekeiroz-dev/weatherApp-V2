@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>☀️ Weather App</title> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">  
+    <script src="https://kit.fontawesome.com/b897380ebc.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <!-- Load data first, then app -->
+  <script src="/data/weather_data.js"></script>
+  <script src="/js/weather_app.js"></script>
+  <script src="/js/city_focus.js"></script>
+   <script src="/js/settings.js"></script>
+  <script src="/js/bulma.js"></script>
+
+
+
+  <script src="/js/settings.js"></script>
+
+
+</head>
+
+<body>
+  <nav class="navbar has-background-black">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <i class="fa-solid fa-smog has-text-white"></i>
+        </a>
+        <span class="navbar-burger has-background-black" data-target="navbarMenu" aria-expanded="false">
+        <span aria-hidden="true" class="has-text-white"></span>
+        <span aria-hidden="true" class="has-text-white"></span>
+        <span aria-hidden="true" class="has-text-white"></span>
+      </span>
+    </div>
+    <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-end has-background-black">
+          <a href="/index" class="navbar-item has-text-white"> Dashboard </a>
+          
+          <a href="/settings" class="navbar-item has-text-white"> Settings </a>          
+        </div>
+    </div>
+</nav>
+  <section>
+  
+        <div class="columns">
+        <div class="column  has-text-centered">
+          <i class="fa-solid fa-smog has-text-black fa-3x mr-6 mt-6 pb-5"></i>
+            <h1 class="title">(Wheter)Weather App</h1><br>
+        </div> 
+        <div class="pt-4  column has-text-centered mt-6">
+         <p class="is-size-5" >Date <i class="fa-solid fa-calendar-days"></i> / Time  <i class="fa-solid fa-clock"></i> </p>
+        <p id="clock" class=" pt-4 is-size-5 has-text-weight-semibold has-text-dark mb-3">
+        </p>
+        </div>
+        <script>
+        function updateClock() {
+        const now = dayjs();
+        const formatted = now.format("dddd, D MMMM YYYY - HH:mm");
+        document.getElementById("clock").textContent = formatted;
+      }
+      document.addEventListener("DOMContentLoaded", () => {
+        updateClock();
+        setInterval(updateClock, 60000); 
+      });
+        </script>
+       
+    </div>
+</div>
+</section>
+    
+  <main class="section has-background-light">
+  <div class="container">
+    <h1 class="title has-text-centered">Settings</h1>
+
+    <div class="columns is-variable is-6">
+      <!-- FAV CITIES -->
+      <div class="column is-half">
+        <div class="card">
+          <header class="card-header">
+            <p class="card-header-title">Display Favorite Cities</p>
+          </header>
+          <div class="card-content">
+            <form id="cities-form">
+              <div class="field">
+                <div class="control">
+                  <!-- CHECKBOX-->
+                  <label class="checkbox"><input type="checkbox" name="favoriteCities" value="Copenhagen"> Copenhagen</label><br>
+                   <label class="checkbox"><input type="checkbox" name="favoriteCities" value="Amsterdam"> Amsterdam</label><br>
+                  <label class="checkbox"><input type="checkbox" name="favoriteCities" value="Berlin"> Berlin</label><br>
+                  <label class="checkbox"><input type="checkbox" name="favoriteCities" value="Tromso"> Tromso</label><br>           
+                  <label class="checkbox"><input type="checkbox" name="favoriteCities" value="Paris"> Paris</label><br>          
+                  <label class="checkbox"><input type="checkbox" name="favoriteCities" value="Waterford"> Waterford</label><br>
+                  <label class="checkbox"><input type="checkbox" name="favoriteCities" value="Cork"> Cork</label><br>
+                   <label class="checkbox"><input type="checkbox" name="favoriteCities" value="NewYork"> New York</label><br>    
+                  <label class="checkbox"><input type="checkbox" name="favoriteCities" value="SanFrancisco"> San Francisco</label>
+                </div>
+              </div>
+              <div class="field mt-4">
+                <div class="control">
+                  <div class="buttons">
+                    <button class="button is-black is-half" onclick="updateFavoriteCities()">Save</button>
+                    <button class="button is-black is-half" onclick="resetFavoriteCities()">Reset</button>
+                    </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!--  OTHERS PREFERENCES -->
+      <div class="column is-half">
+        <div class="card">
+          <header class="card-header">
+            <p class="card-header-title">Other Preferences</p>
+          </header>
+          <div class="card-content">
+            <form id="preferences-form">
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox">
+                    <input type="checkbox" name="displayPreferences" value="celsius">
+                    Show temperatures the European way
+                  </label><br><br>
+
+                  <label class="checkbox">
+                    <input type="checkbox" name="displayPreferences" value="fahrenheit">
+                    Show temperatures the American way
+                  </label><br><br>
+
+                  <label class="checkbox">
+                    <input type="checkbox" name="displayPreferences" value="kmh">
+                    Use metric wind speeds (fast & breezy)
+                  </label><br><br>
+
+                  <label class="checkbox">
+                    <input type="checkbox" name="displayPreferences" value="mph">
+                    Use imperial wind speeds (miles & gusts)
+                  </label><br><br>
+
+                  <label class="checkbox">
+                    <input type="checkbox" name="displayPreferences" value="feelslike">
+                    Current feelslike
+                  </label>
+                </div>
+              </div>
+
+              <div class="field mt-4">
+                <div class="control">
+                  <button class="button is-black is-fullwidth">Save</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+  <div class="has-text-centered mb-5 mt-4">
+     
+<main class="section has-background-light">
+
+  <div class="container">
+   
+    <div class="columns is-multiline" id="favorite-cards"></div><hr>
+
+    <h1 class="title has-text-centered">Weather Dashboard</h1>
+    <div id="weather-cards" class="columns is-multiline"></div>
+  </div>
+
+ 
+</main>
+
+  
+
+ 
+<footer class="footer has-background-black has-text-white">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p>
+            <i class="fa-solid fa-smog has-text-white"></i>
+            (Wheter)Weather App - by <a href="https://github.com/katekeiroz-dev" class="has-text-primary">Kate Keiroz © 2025</a> . All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+</body>
+</html>
+
+
