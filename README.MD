@@ -66,7 +66,7 @@ Through this project, I gained hands-on experience with:
  ---
 
 ### 🖥️Layout desktop
-<img width="500" alt="Screenshot 2025-02-26 at 23 20 21" src="/Users/katekeiroz/Desktop/finalVersion/readme_Imgs/Screenshot 2025-05-18 at 01.29.07.png" />
+![Screenshot](https://github.com/katekeiroz-dev/weatherApp-V2/blob/main/readme_Imgs/Screenshot%202025-05-18%20at%2001.29.07.png)
 
 
 ### 💻Layout Responsive
