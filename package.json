@@ -1,0 +1,25 @@
+{
+  "name": "katekeiroz-assign-2",
+  "version": "1.0.0",
+  "description": "This project is part of an assignment for the **Web Development 1** module. The goal is to create a fully functional, responsive, that provides weather data for cities , display the weather and forecast for the next 7 days for cities.  This project showcases a responsive and minimalist layout with engaging UI elements. The focus of this assignment is to apply fundamental web development concepts, including:   - **HTML5** for structuring content   - **Bulma** (CSS) framewokr for styling and layout  - **JavaScript** for the app functionality logic   -**Eleventy** HTML template",
+  "main": ".eleventy.js",
+  "scripts": {
+  "build": "eleventy"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katekeiroz-dev/weatherApp-V2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/katekeiroz-dev/weatherApp-V2/issues"
+  },
+  "homepage": "https://github.com/katekeiroz-dev/weatherApp-V2#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.0"
+  }
+}
