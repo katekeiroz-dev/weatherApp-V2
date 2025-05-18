@@ -118,7 +118,7 @@ http://localhost:8080/.
 
 ## Project live demo ⤵️⤵️:
 
-[CLICK HERE](place html )
+[CLICK HERE](https://weatherapp-katekeiroz.netlify.app/ )
 
 
 ---
