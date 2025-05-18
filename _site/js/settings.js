@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// ✅ Now defined globally so it works with onclick
+// Now defined globally so it works with onclick
 function resetFavoriteCities() {
   if (confirm("Are you sure you want to reset all favorite cities?")) {
     localStorage.removeItem("favoriteCities");

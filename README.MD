@@ -64,19 +64,19 @@ Through this project, I gained hands-on experience with:
 
 ### ⚙️Design creation
 
-<img width="500" alt="Screenshot 2025-02-26 at 23 24 18" src="https://github.com/user-attachments/assets/2fa1efec-f38c-44c8-8f96-5960d3fa1b75" />
+<img width="500" alt="Screenshot 2025-02-26 at 23 24 18" src="/Users/katekeiroz/Desktop/finalVersion/readme_Imgs/Screenshot 2025-05-17 at 18.11.38.png" />
 
  ---
 
 ### 🖥️Layout desktop
-<img width="500" alt="Screenshot 2025-02-26 at 23 20 21" src="https://github.com/user-attachments/assets/0ce83ae1-9898-462d-adab-39caa6a06227" />
+<img width="500" alt="Screenshot 2025-02-26 at 23 20 21" src="/Users/katekeiroz/Desktop/finalVersion/readme_Imgs/Screenshot 2025-05-18 at 01.29.07.png" />
 
 
 ### 💻Layout Responsive
 
-<img width="500" alt="Screenshot 2025-02-26 at 23 21 21" src="https://github.com/user-attachments/assets/db14a0cc-d644-4c6c-abdf-a0446f65245c" />
+<img width="500" alt="Screenshot 2025-02-26 at 23 21 21" src="/Users/katekeiroz/Desktop/finalVersion/readme_Imgs/Screenshot 2025-05-18 at 01.29.34.png" />
 
-<img width="500" alt="Screenshot 2025-02-26 at 23 21 08" src="https://github.com/user-attachments/assets/3c1e3c06-7828-4a82-8eb7-68ad87f413cd" />
+<img width="500" alt="Screenshot 2025-02-26 at 23 21 08" src="/Users/katekeiroz/Desktop/finalVersion/readme_Imgs/Screenshot 2025-05-18 at 01.28.42.png" />
 
 
 ## 📂 Project Structure
@@ -87,7 +87,7 @@ This project follows an organized structure to facilitate code maintenance and s
 
 ### 📂 project/
 -
-<img width="500" alt="Screenshot 2025-02-26 at 23 21 08" src="https://github.com/user-attachments/assets/3c1e3c06-7828-4a82-8eb7-68ad87f413cd" />
+<img width="500" alt="Screenshot 2025-02-26 at 23 21 08" src="/Users/katekeiroz/Desktop/finalVersion/readme_Imgs/Screenshot 2025-05-17 at 18.11.38.png" />
 
  ---
 
