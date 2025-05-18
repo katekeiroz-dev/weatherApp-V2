@@ -15,11 +15,11 @@ The focus of this assignment is to apply fundamental web development concepts, i
 ### 🎓 What I Learned :
 Through this project, I gained hands-on experience with:  
 
-**Crafting well-structured web pages** using semantic HTML elements  
-**Utilizing Bulma** to create modern, responsive UI components  
-**Simulating API data locally** using a custom JSON-based data structure served on **localhost**  
-**Storing and accessing weather data** through a local data source to replicate real-world API integration
-  ---
+- **Crafting well-structured web pages** using semantic HTML elements  
+- **Utilizing Bulma** to create modern, responsive UI components  
+- **Simulating API data locally** using a custom JSON-based data structure served on **localhost**  
+- **Storing and accessing weather data** through a local data source to replicate real-world API integration
+---
   
 ## ✨ Key Features  
 - Fully responsive layout tailored for both mobile and desktop experiences  
@@ -41,8 +41,8 @@ Through this project, I gained hands-on experience with:
 - Customize your app experience through a simple settings interface  
 - Choose favorite cities using a dynamic list of checkboxes  
 - Includes two main actions:  
-  - **Apply Changes** – saves selections to update the Dashboard view  
-  - **Reset Favorites** – clears all chosen favorites  
+- **Apply Changes** – saves selections to update the Dashboard view  
+- **Reset Favorites** – clears all chosen favorites  
 - Seamlessly integrates user input using JavaScript to update the interface  
   ---
 
