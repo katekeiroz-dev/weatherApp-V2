@@ -62,9 +62,6 @@ Through this project, I gained hands-on experience with:
  
 - Fontwesome (https://fontawesome.com/)
 
-### ⚙️Design creation
-
-<img width="500" alt="Screenshot 2025-02-26 at 23 24 18" src="/Users/katekeiroz/Desktop/finalVersion/readme_Imgs/Screenshot 2025-05-17 at 18.11.38.png" />
 
  ---
 
@@ -129,20 +126,75 @@ http://localhost:8080/.
 
 
 ## References
-To assist me during the development of this assignment , I have used the following resources : <br><br>
+### 🔄 `Object.entries`  
+Returns an array of a given object's own enumerable string-keyed property `[key, value]` pairs. Useful when you need both keys and values for iteration.  
+📚 Reference: [MDN - Object.entries](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)
 
-- Resources used to overflow images in scroll : https://www.w3schools.com/howto/howto_css_image_gallery_scroll.asp
+---
 
-- Resources used to learn more about flexbox : https://www.w3schools.com/css/css3_flexbox.asp
+### 📁 `dir` Data Directory in Eleventy  
+Instead of permalinks, you can configure the input/output structure of your Eleventy project using the `dir` property in `.eleventy.js`.  
+📚 Reference: [11ty - Directory Structure](https://www.11ty.dev/docs/config/#directory-structure)
 
-- Resources used to know the proper use of css units : https://www.w3schools.com/css/css_units.asp
+---
 
-- Resources used to css transitions : https://www.w3schools.com/css/css3_transitions.asp
+### ⏱️ `setInterval()`  
+Executes a function repeatedly at fixed time intervals. Great for refreshing weather data or updating clocks.  
+📚 Reference: [MDN - setInterval](https://developer.mozilla.org/en-US/docs/Web/API/setInterval)
 
-- Resources used to create a drop shadow effect : https://www.geeksforgeeks.org/how-to-create-a-drop-shadow-effect-using-css/?ref=gcse_outind
+---
 
-- Resources used to media queries : https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries
+### 🧱 `document.createTextNode()`  
+Used to create a new text node, which can then be appended to a DOM element. Handy when inserting plain text into a dynamically created element.  
+📚 Reference: [MDN - createTextNode](https://developer.mozilla.org/en-US/docs/Web/API/Document/createTextNode)
 
+---
+
+### 🧹 `String.trim()`  
+Removes whitespace from both ends of a string—helpful when cleaning user input before saving or displaying.  
+📚 Reference: [MDN - String.trim](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)
+
+---
+
+### 🧩 `event.target` vs `event.currentTarget`  
+Understand the difference between the actual element clicked (`target`) and the one with the event listener (`currentTarget`).  
+📚 Reference: [JavaScript.info - Event Delegation](https://javascript.info/event-delegation#event-target)
+
+---
+
+### ⚖️ `Switch Statements`  
+An alternative to multiple `if...else` conditions. Useful when dealing with many possible options (e.g., different weather conditions or icons).  
+📚 Reference: [MDN - switch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
+
+---
+
+### 💾 `localStorage.length`  
+Returns the number of items stored in `localStorage`. Useful for checking if preferences or saved data exist.  
+📚 Reference: [MDN - Storage.length](https://developer.mozilla.org/en-US/docs/Web/API/Storage/length)
+
+---
+
+### 📥 Fetching Local JSON Data  
+Use the `fetch()` API to retrieve weather data from local JSON files served on `localhost`. Ideal for prototyping apps without using external APIs.  
+📚 Reference: [MDN - fetch()](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+
+---
+
+### 🧩 Bulma Cards  
+A flexible Bulma component used for displaying grouped content like city weather cards. Includes header, content, and footer sections.  
+📚 Reference: [Bulma - Card Component](https://bulma.io/documentation/components/card/)
+
+---
+
+### 🕒 `dayjs` – Lightweight Date Library  
+A modern alternative to Moment.js, used for parsing, formatting, and manipulating dates in a cleaner way.  
+📚 Reference: [day.js Documentation](https://day.js.org/docs/en/installation/installation)
+
+---
+
+### 📦 `JSON.stringify()` and `JSON.parse()`  
+Convert JavaScript objects to JSON strings and vice versa. Crucial for storing structured data like arrays or objects in `localStorage`.  
+📚 Reference: [MDN - JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON)
 
 ---
 Made by Kate Keiroz
