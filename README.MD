@@ -66,14 +66,15 @@ Through this project, I gained hands-on experience with:
  ---
 
 ### 🖥️Layout desktop
-![Screenshot](https://github.com/katekeiroz-dev/weatherApp-V2/blob/main/readme_Imgs/Screenshot%202025-05-18%20at%2001.29.07.png)
+<img width="500" alt="Screenshot 2025-02-26 at 23 20 21" src="https://github.com/katekeiroz-dev/weatherApp-V2/blob/main/readme_Imgs/Screenshot%202025-05-18%20at%2001.29.07.png?raw=true" />
 
 
 ### 💻Layout Responsive
 
-<img width="500" alt="Screenshot 2025-02-26 at 23 21 21" src="/Users/katekeiroz/Desktop/finalVersion/readme_Imgs/Screenshot 2025-05-18 at 01.29.34.png" />
+<img width="500" alt="Layout" src="https://github.com/katekeiroz-dev/weatherApp-V2/blob/main/readme_Imgs/Screenshot%202025-05-18%20at%2001.28.42.png?raw=true" />
 
-<img width="500" alt="Screenshot 2025-02-26 at 23 21 08" src="/Users/katekeiroz/Desktop/finalVersion/readme_Imgs/Screenshot 2025-05-18 at 01.28.42.png" />
+
+<img width="500" alt="Layout" src="https://github.com/katekeiroz-dev/weatherApp-V2/blob/main/readme_Imgs/Screenshot%202025-05-18%20at%2001.29.34.png?raw=true" />
 
 
 ## 📂 Project Structure
@@ -84,7 +85,7 @@ This project follows an organized structure to facilitate code maintenance and s
 
 ### 📂 project/
 -
-<img width="500" alt="Screenshot 2025-02-26 at 23 21 08" src="/Users/katekeiroz/Desktop/finalVersion/readme_Imgs/Screenshot 2025-05-17 at 18.11.38.png" />
+<img width="500" alt="Screenshot 2025-02-26 at 23 21 08" src="https://github.com/katekeiroz-dev/weatherApp-V2/blob/main/readme_Imgs/Screenshot%202025-05-17%20at%2018.11.38.png?raw=true" />
 
  ---
 
@@ -124,80 +125,58 @@ http://localhost:8080/.
 ---
 
 
-
 ## References
-### 🔄 `Object.entries`  
+###  `Object.entries`  
 Returns an array of a given object's own enumerable string-keyed property `[key, value]` pairs. Useful when you need both keys and values for iteration.  
-📚 Reference: [MDN - Object.entries](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)
+- Reference: [MDN - Object.entries](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)
 
 ---
 
-### 📁 `dir` Data Directory in Eleventy  
+###  `dir` Data Directory in Eleventy  
 Instead of permalinks, you can configure the input/output structure of your Eleventy project using the `dir` property in `.eleventy.js`.  
-📚 Reference: [11ty - Directory Structure](https://www.11ty.dev/docs/config/#directory-structure)
+- Reference: [11ty - Directory Structure](https://www.11ty.dev/docs/config/#directory-structure)
 
 ---
 
-### ⏱️ `setInterval()`  
-Executes a function repeatedly at fixed time intervals. Great for refreshing weather data or updating clocks.  
-📚 Reference: [MDN - setInterval](https://developer.mozilla.org/en-US/docs/Web/API/setInterval)
+###  `setInterval()`  
+Executes a function repeatedly at fixed time intervals. Great for refreshing weather data .  
+- Reference: [MDN - setInterval](https://developer.mozilla.org/en-US/docs/Web/API/setInterval)
 
 ---
 
-### 🧱 `document.createTextNode()`  
-Used to create a new text node, which can then be appended to a DOM element. Handy when inserting plain text into a dynamically created element.  
-📚 Reference: [MDN - createTextNode](https://developer.mozilla.org/en-US/docs/Web/API/Document/createTextNode)
 
----
-
-### 🧹 `String.trim()`  
+###  `String.trim()`  
 Removes whitespace from both ends of a string—helpful when cleaning user input before saving or displaying.  
-📚 Reference: [MDN - String.trim](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)
+-  Reference: [MDN - String.trim](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)
 
 ---
 
-### 🧩 `event.target` vs `event.currentTarget`  
-Understand the difference between the actual element clicked (`target`) and the one with the event listener (`currentTarget`).  
-📚 Reference: [JavaScript.info - Event Delegation](https://javascript.info/event-delegation#event-target)
-
----
-
-### ⚖️ `Switch Statements`  
-An alternative to multiple `if...else` conditions. Useful when dealing with many possible options (e.g., different weather conditions or icons).  
-📚 Reference: [MDN - switch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
-
----
-
-### 💾 `localStorage.length`  
-Returns the number of items stored in `localStorage`. Useful for checking if preferences or saved data exist.  
-📚 Reference: [MDN - Storage.length](https://developer.mozilla.org/en-US/docs/Web/API/Storage/length)
-
----
-
-### 📥 Fetching Local JSON Data  
+###  Fetching Local JSON Data  
 Use the `fetch()` API to retrieve weather data from local JSON files served on `localhost`. Ideal for prototyping apps without using external APIs.  
-📚 Reference: [MDN - fetch()](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+- Reference: [MDN - fetch()](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 
 ---
 
-### 🧩 Bulma Cards  
+###  Bulma Cards  
 A flexible Bulma component used for displaying grouped content like city weather cards. Includes header, content, and footer sections.  
-📚 Reference: [Bulma - Card Component](https://bulma.io/documentation/components/card/)
+- Reference: [Bulma - Card Component](https://bulma.io/documentation/components/card/)
 
 ---
 
-### 🕒 `dayjs` – Lightweight Date Library  
-A modern alternative to Moment.js, used for parsing, formatting, and manipulating dates in a cleaner way.  
-📚 Reference: [day.js Documentation](https://day.js.org/docs/en/installation/installation)
+###  `dayjs` – Lightweight Date Library  
+Used for parsing, formatting, and manipulating dates in a cleaner way.  
+- Reference: [day.js Documentation](https://day.js.org/docs/en/installation/installation)
 
 ---
 
-### 📦 `JSON.stringify()` and `JSON.parse()`  
+###  `JSON.stringify()` and `JSON.parse()`  
 Convert JavaScript objects to JSON strings and vice versa. Crucial for storing structured data like arrays or objects in `localStorage`.  
-📚 Reference: [MDN - JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON)
+- Reference: [MDN - JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON)
 
 ---
 Made by Kate Keiroz
+
+
 
 
 
