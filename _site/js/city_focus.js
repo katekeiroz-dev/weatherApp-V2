@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let city = params.get("name");
 
   if (!city || !window.weatherData) {
-    console.error("Missing city or weatherData.");
+    console.error("Missing weatherData");
     return;
   }
 
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  const weatherIcon = getRandomWeatherImage(); // your helper function
+  const weatherIcon = getRandomWeatherImage(); //icon adds
 
   main.innerHTML = `
     <div class="columns card has-text-centered">
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
     61: "Light rain",
     71: "Light snow",
     95: "Thunderstorm",
-    // Add more as needed
+    
   };
 
   const container = document.getElementById("sevenDaySummary");

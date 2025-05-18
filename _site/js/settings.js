@@ -28,16 +28,16 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Now defined globally so it works with onclick
+
 function resetFavoriteCities() {
   if (confirm("Are you sure you want to reset all favorite cities?")) {
     localStorage.removeItem("favoriteCities");
 
-    // Optionally uncheck all checkboxes without reloading:
+    // ncheck all checkboxes without reloading
     const checkboxes = document.querySelectorAll("input[type='checkbox'][name='favoriteCities']");
     checkboxes.forEach(cb => cb.checked = false);
 
-    // Now reload the page so the main dashboard reflects this
+    // when I reload the page then the dashboard (main content) reflects this
     location.reload();
   }
 }

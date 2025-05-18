@@ -12,7 +12,7 @@
   <script src="/data/weather_data.js"></script>
   <script src="/js/weather_app.js"></script>
   <script src="/js/city_focus.js"></script>
-   
+      <!-- style for the hamburger menu -->
   <script src="/js/bulma.js"></script>
 
 
@@ -26,22 +26,15 @@
   {% include "nav.njk" %}
   {% include "header.njk" %}
     {{ content | safe }}
-  <div class="has-text-centered mb-5 mt-4">
-     
+     <!-- title -->
+  <div class="has-text-centered mb-5 mt-4">    
 <main class="section has-background-light">
-
   <div class="container">
-   
     <div class="columns is-multiline" id="favorite-cards"></div><hr>
-
     <h1 class="title has-text-centered">Cities Weather Dashboard</h1>
     <div id="weather-cards" class="columns is-multiline"></div>
   </div>
-
- 
 </main>
-
-
 
  {% include "footer.njk" %}
 

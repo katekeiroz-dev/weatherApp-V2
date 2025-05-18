@@ -1,6 +1,6 @@
 window.weatherApp = window.weatherApp || { components: {}, dataStore: {} };
 
-// Image obj
+// ICONS obj
 window.weatherImg = {
   sun: "fa-solid fa-sun",
   cloudy: "fa-solid fa-cloud",
@@ -8,7 +8,7 @@ window.weatherImg = {
   storm: "fa-solid fa-cloud-bolt"
 };
 
-// Random image picker
+// Random iICONS picker
 function getRandomWeatherImage() {
   const images = Object.values(window.weatherImg);
   const randomIndex = Math.floor(Math.random() * images.length);
