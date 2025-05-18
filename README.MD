@@ -1,7 +1,7 @@
 # Weather APP
 
 ## ✨ The project :
-This project is part of an assignment for the **Web Development 1** module. The goal is to create a fully functional, responsive, that provides weather data for cities , display the weather and forecast for the next 7 days for cities. 
+This project is part of an assignment for the **Web Development 1** module. The goal is to create a fully functional web app, that provides weather data for cities , display the weather and forecast for the next 7 days for cities. 
 This project showcases a responsive and minimalist layout with engaging UI elements.
 The focus of this assignment is to apply fundamental web development concepts, including:  
 - **HTML5** for structuring content  
