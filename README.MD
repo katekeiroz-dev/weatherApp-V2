@@ -15,51 +15,52 @@ The focus of this assignment is to apply fundamental web development concepts, i
 ### 🎓 What I Learned :
 Through this project, I gained hands-on experience with:  
 
-
 **Crafting well-structured web pages** using semantic HTML elements  
 **Utilizing Bulma** to create modern, responsive UI components  
 **Simulating API data locally** using a custom JSON-based data structure served on **localhost**  
 **Storing and accessing weather data** through a local data source to replicate real-world API integration
   ---
   
-## ✨Key Features :
-- Responsive desktop interface with organized and modern layout.
-- Homepage with a welcoming design  
-- Booking section for pet reservations  
-- About Us & Services pages  
-- Gallery page with images of pets
-- Informative cards with optimized images and texts.
-- Design System with standardized colors, typography and components.
-- Intuitive navigation** with interactive icons and buttons.
+## ✨ Key Features  
+- Fully responsive layout tailored for both mobile and desktop experiences  
+- Stylish interface built with Bulma, offering a clean and modern look  
+- Data-driven weather interface powered by a local JSON-based API  
 
+### 🌍 Main Dashboard  
+- Presents weather summaries for multiple global cities  
+- Interactive cards: selecting a city navigates to a detailed view  
+- Highlights a personalized list of favorite cities based on user preferences  
+
+### 🌦️ City Weather View  
+- Offers an in-depth look at the selected city's weather  
+- Displays:
+  - A 7-day forecast beginning from the next calendar day  
+  - Key statistics: average temperature, high/low temperatures, wind details  
+
+### ⚙️ Preferences Panel  
+- Customize your app experience through a simple settings interface  
+- Choose favorite cities using a dynamic list of checkboxes  
+- Includes two main actions:  
+  - **Apply Changes** – saves selections to update the Dashboard view  
+  - **Reset Favorites** – clears all chosen favorites  
+- Seamlessly integrates user input using JavaScript to update the interface  
   ---
 
 ## 🛠️ Technologies Used :
-- HTML5 for semantic structuring.
-- CSS3 (Flexbox layout)
+- HTML5 
+- Bulma (CSS framework)
+- 11ty
+- JavaScripit
 - Git for version control.
+- Github
 - Netlify ( deploy)
-- Figma ( design wireframe layout)
+- daysjs
 
   ---
 
-## 🎨 Design System
-
-### Colors
-| Type | Code |
-|-----------------|-----------|
-| Primary | `#FDC74B` |
-| Secondary | `#E96F5D` |
-| Button | `#008794` |
-| Button hover | `#14D4E6` |
-| Background | `#2E2E2E` |
-| Primary Text | `#232222` |
-| Secondary Text | `#FFFFFF` |
-
-### Typography
-- **Main Source**: `poppins`
-  - Titles: `2rem` ,Subtitles `1.5rem`.
-  - Paragraphs: `1.2rem` with `1.4` line spacing.
+##  Images
+ 
+- Fontwesome (https://fontawesome.com/)
 
 ### ⚙️Design creation
 
@@ -85,27 +86,8 @@ This project follows an organized structure to facilitate code maintenance and s
 ## Directories and Files
 
 ### 📂 project/
-- **📂 Assets/** → Contains visual resources, such as css, icons , images and design layout.
-  - **📂 css/** → SVG icons used in the interface.
-    - 📄 home.css
-    - 📄 about.css
-    - 📄 ... (other css files)
-  - **📂 icons/** → all icons used.
-  - **📂 images/** → all images used.
-  - **📂 wireframe-layout/** → images of the design layout .   
-- **📂 components/** → reusable html componets .
-  - 📄 button.html
-  - 📄 header.html
-  - 📄 services-cards.html 
-  - 📄 ... (other)
-- **📂 Pages/** → contains html files .
-  - 📄 about.html
-  - 📄 booking.html
-  - 📄 contact.html 
-  - 📄 ... (other)
-- **📄 index.html** → Main application file containing an HTML structure.
-- **📄 .gitignore**
-- **📄 README.md** → Project documentation, explaining its structure and use.
+-
+<img width="500" alt="Screenshot 2025-02-26 at 23 21 08" src="https://github.com/user-attachments/assets/3c1e3c06-7828-4a82-8eb7-68ad87f413cd" />
 
  ---
 
@@ -113,26 +95,37 @@ This project follows an organized structure to facilitate code maintenance and s
 
 ### Clone the repository:
  ```sh
-git clone https://github.com/katekeiroz-dev/webDev-assignment1.git
+git clone https://github.com/katekeiroz-dev/weatherApp-V2
 ```
-#### Open `index.html` in your browser.  
+
+### install NPM
+
+```sh
+npm install
+```
+
+### Run the development server:
+
+```sh
+eleventy --serve
+```
+
+### Local Host
+
+```sh
+http://localhost:8080/.
+```
+
 
 ---
 
 ## Project live demo ⤵️⤵️:
 
-[CLICK HERE](https://finnpethotel.netlify.app/)
+[CLICK HERE](place html )
 
 
 ---
 
-## 🌟 Credits 
-- Images from [Unsplash](https://unsplash.com/)  
-- Icons from [Iconfinder](https://www.iconfinder.com/search?q=COUCH&price=free)
-- Menu bars - Font Awesome [Fontawesome](https://fontawesome.com/icons)
-- Media video - [Dog Stock Footage | Pet | Animal | Free HD Videos - no copyright](https://www.youtube.com/watch?v=lWQaaZkqND4&t=10s)
-
----
 
 
 ## References
@@ -155,29 +148,4 @@ To assist me during the development of this assignment , I have used the followi
 Made by Kate Keiroz
 
 
-
-
-
-## Getting Started
-
-### Install Eleventy
-
-```bash
-npm install -g @11ty/eleventy
-```
-
-### Run Eleventy
-
-```bash
-eleventy --serve
-```
-
-Now navigate to [http://localhost:8080](http://localhost:8080) to see your site.
-
-Hot reloading is enabled, so any changes you make to your files will be reflected in the browser.
-
-## Technologies
-
-* [Eleventy](https://www.11ty.dev/)
-* [Bulma](https://bulma.io/)
 
