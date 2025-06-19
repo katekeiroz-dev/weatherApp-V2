@@ -61,9 +61,9 @@ Through this project, I gained hands-on experience with:
 ##  Images
  
 - Fontwesome (https://fontawesome.com/)
+.
 
-
- ---
+ ----
 
 ### 🖥️Layout desktop
 <img width="500" alt="Screenshot 2025-02-26 at 23 20 21" src="https://github.com/katekeiroz-dev/weatherApp-V2/blob/main/readme_Imgs/Screenshot%202025-05-18%20at%2001.29.07.png?raw=true" />
@@ -89,7 +89,7 @@ This project follows an organized structure to facilitate code maintenance and s
 
  ---
 
-## 🚀 How to run the Project
+## 🚀 How to run the Project;
 
 ### Clone the repository:
  ```sh
